@@ -1,0 +1,18 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--txt-logo);
+}
+
+span.logo__accent {
+    color: var(--txt-logos);
+}
+
+span.logo__black {
+    color: var(--txt-logo-black);
+}
+
+span.logo__white {
+    color: var(--txt-general-btn);
+}

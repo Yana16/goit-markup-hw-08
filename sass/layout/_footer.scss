@@ -1,0 +1,146 @@
+.footer {
+    background-color: var(--bg-order);
+    padding: 60px 0px;
+
+
+&__address-box {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+&__addressdescr {
+    display: flex;
+    width: max-content;
+    color: var(--txt-general-btn);
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+&__mailto {
+    display: flex;
+    width: max-content;
+    color: var(--txt-mail-footer);
+    margin-bottom: 9px;
+}
+
+&__tel {
+    display: -webkit-inline-flex;
+    width: max-content;
+    color: var(--txt-mail-footer);
+}
+
+&__container-links {
+    margin-left: 70px;
+}
+
+&__title,
+&__emailinput {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--txt-general-btn);
+    margin-bottom: 20px;
+}
+
+&__social {
+    display: flex;
+}
+
+&__list:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+&__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.25);
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link:hover,
+&__link:focus {
+    background-color: var(--general-btn-cl);
+    color: var(--txt-general-btn);
+}
+
+&__icon {
+    fill: var(--txt-general-btn);
+}
+
+&__sub {
+    display: block;
+    margin-left: auto;
+}
+
+&__emailinput {
+    margin-bottom: 0%;
+}
+
+&__submit {
+    display: flex;
+    align-items: baseline;
+}
+
+&__sublabel {
+    display: flex;
+    flex-direction: column;
+}
+
+&__input {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--txt-mail-footer);
+    background-color: transparent;
+    border-color: var(--txt-mail-footer);
+    width: 358px;
+    height: 50px;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+}
+
+&__submitbtn {
+    background-color: var(--general-btn-cl);
+    color: var(--txt-general-btn);
+    box-shadow: 1px 4px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    margin-top: 36px;
+    border: none;
+}
+
+&__sign {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+}
+
+&__btnicon {
+    position: absolute;
+    display: inline-block;
+    fill: var(--txt-general-btn);
+    margin-bottom: auto;
+    margin-right: 28px;
+    margin-top: auto;
+    margin-left: 10px;
+}
+}
+
+
+
+
+
