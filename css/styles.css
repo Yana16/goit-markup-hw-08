@@ -42,7 +42,7 @@ body {
 
 /* common style start */
 
-.card-set {
+/* .card-set {
     display: flex;
     margin: calc(-1 * var(--indent) / 2);
 }
@@ -56,7 +56,7 @@ body {
 .card-set-item {
     margin: calc(var(--indent) / 2);
     flex-basis: calc(100% - var(--indent) * var(--item) / var(--item));
-}
+} */
 
 .link {
     text-decoration: none;

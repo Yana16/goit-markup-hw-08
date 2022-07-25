@@ -28,6 +28,28 @@
   --gap-box: 30px;
 }
 
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: calc(-1 * var(--indent) / 2);
+}
+
+.card-set-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: calc(-1 * var(--indent) / 2);
+}
+
+.card-set-item {
+  margin: calc(var(--indent) / 2);
+  -ms-flex-preferred-size: calc(100% - var(--indent) * var(--item) / var(--item));
+      flex-basis: calc(100% - var(--indent) * var(--item) / var(--item));
+}
+
 body {
   font-family: var(--main-font);
   font-size: 16px;
