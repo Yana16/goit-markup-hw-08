@@ -1,36 +1,18 @@
 .container {
-    width: 100%;
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
-&-div {
+.container-div {
     display: flex;
     align-items: baseline;
-    // width: 1200px;
-    // padding-right: 15px;
-    // padding-left: 15px;
-    // margin-left: auto;
-    // margin-right: auto;
-}
-
-@media screen and (min-width: 480px) {
-   .container {
-    max-width: 480px;
-}
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
