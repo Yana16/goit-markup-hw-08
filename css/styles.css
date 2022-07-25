@@ -1,4 +1,4 @@
-:root {
+/* :root {
     /* fonts */
     --main-font: "Roboto", sans-serif;
     --secondary-font: "Raleway";
@@ -30,19 +30,19 @@
 
     /* gap*/
     --gap-box: 30px;
-}
-
+} */
+/* 
 body {
     font-family: var(--main-font);
     font-size: 16px;
     color: var(--txt-main);
     line-height: 1.14;
     letter-spacing: 0.03em;
-}
+} */
 
 /* common style start */
 
-.card-set {
+/* .card-set {
     display: flex;
     margin: calc(-1 * var(--indent) / 2);
 }
@@ -56,9 +56,9 @@ body {
 .card-set-item {
     margin: calc(var(--indent) / 2);
     flex-basis: calc(100% - var(--indent) * var(--item) / var(--item));
-}
+} */
 
-.link {
+/* .link {
     text-decoration: none;
     color: currentColor;
 }
@@ -81,7 +81,7 @@ h3,
 h4,
 p {
     margin: 0;
-}
+} */
 
 
 /* .header-link.current {

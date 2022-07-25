@@ -1,0 +1,15 @@
+.card-set {
+    display: flex;
+    margin: calc(-1 * var(--indent) / 2);
+}
+
+.card-set-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * var(--indent) / 2);
+}
+
+.card-set-item {
+    margin: calc(var(--indent) / 2);
+    flex-basis: calc(100% - var(--indent) * var(--item) / var(--item));
+}
