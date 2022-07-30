@@ -58,7 +58,7 @@ body {
     flex-basis: calc(100% - var(--indent) * var(--item) / var(--item));
 } */
 
-.link {
+/* .link {
     text-decoration: none;
     color: currentColor;
 }
@@ -81,7 +81,7 @@ h3,
 h4,
 p {
     margin: 0;
-}
+} */
 
 
 /* .header-link.current {
@@ -719,11 +719,11 @@ span.logo-white {
     padding: 20px 24px;
 }
 
-img {
+/* img {
     display: block;
     max-width: 100%;
     height: auto;
-}
+} */
 
 .menu-title {
     font-weight: 700;

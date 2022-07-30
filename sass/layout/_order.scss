@@ -4,7 +4,31 @@
     
 
     &__title {
-        font-size: 44px;
+
+    @media screen and (min-width: 480px){
+        font-size: 26px;
+        line-height: calc( 42 / 26 );
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--txt-general-btn);
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px){
+        font-size: 26px;
+        line-height: calc( 42 / 26 );
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--txt-general-btn);
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1600px){
+         font-size: 44px;
         line-height: 1.36;
         letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -12,6 +36,8 @@
         color: var(--txt-general-btn);
         max-width: 650px;
         margin: 0 auto;
+    }
+
     }
 
     &__btn {

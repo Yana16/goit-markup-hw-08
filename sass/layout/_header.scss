@@ -1,6 +1,6 @@
 .header {
     border-bottom: 1px solid var(--header-line);
-
+    z-index: 10;
 
 &__container {
     display: flex;
@@ -12,13 +12,41 @@
     margin-top: 24px;
     margin-right: 93px;
     margin-bottom: 25px;
+
+     @media screen and (min-width: 480px) {
+        margin-top: 16px;
+        margin-right: 276px;
+        margin-bottom: 16px; 
+        margin-left: 15px; 
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 26px;
+        // margin-right: 276px;
+        margin-bottom: 15px; 
+        margin-left: 26px; 
+    }
 }
 
 
 &__list {
-    margin-right: 50px;
-    display: flex;
+
+    @media screen and (min-width: 480px) {
+        display: none;  
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 50px;
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+        display: flex; 
+    }
 }
+
+
 
 &__item {
     margin-right: 50px;
@@ -49,20 +77,32 @@
 }
 
 
-// .line {
-//     width: 48px;
-//     height: 4px;
-//     border-radius: 2px;
-//     background-color: var(--general-btn-cl);
-// }
+.line {
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--general-btn-cl);
+}
 
 &__group {
     margin-left: auto;
 }
 
 &__contact {
-    margin-left: 50px;
-    display: flex;
+
+     @media screen and (min-width: 480px) {
+        display: none;  
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 50px;
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 50px;
+        display: flex;
+}
 }
 
 &__mailto {

@@ -1,5 +1,32 @@
 .approach {
-    padding: 94px;
+
+    @media screen and (min-width: 480px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
+    
+
+    &__block {
+    --item: 1;
+
+    @media screen and (min-width: 768px) {
+     --item: 2;
+    }
+
+    @media screen and (min-width: 1600px) {
+     --item: 4;
+    }
+}
 
     &__svg {
         display: flex;

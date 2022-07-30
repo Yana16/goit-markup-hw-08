@@ -1,6 +1,8 @@
 .card-set {
     display: flex;
-    margin: calc(-1 * var(--indent) / 2);
+    flex-wrap: wrap;
+    // margin: calc(-1 * var(--indent) / 2);
+    gap: var(--indent);
 }
 
 .card-set-portfolio {
@@ -9,7 +11,7 @@
     margin: calc(-1 * var(--indent) / 2);
 }
 
-.card-set-item {
-    margin: calc(var(--indent) / 2);
-    flex-basis: calc(100% - var(--indent) * var(--item) / var(--item));
+.card-set__item {
+    flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
 }
+

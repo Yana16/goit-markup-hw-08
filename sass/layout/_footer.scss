@@ -3,6 +3,45 @@
     padding: 60px 0px;
 
 
+
+&__container {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+&__sublabel {
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 20px;      
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;      
+    }
+}
+
+&__logo {
+    
+    @media screen and (min-width: 480px){
+       display: flex;
+       justify-content: center; 
+    }
+
+    @media screen and (min-width: 768px){
+       display: flex;
+       justify-content: center; 
+    }
+    
+    @media screen and (min-width: 1600px){
+       display: block;
+    }
+}
+
+
 &__address-box {
     font-size: 14px;
     line-height: 1.71;
@@ -16,6 +55,22 @@
     color: var(--txt-general-btn);
     margin-top: 20px;
     margin-bottom: 9px;
+
+    @media screen and (min-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    @media screen and (min-width: 1600px) {
+        margin-left: auto;
+        margin-right: auto;
+
+}
 }
 
 &__mailto {
@@ -23,16 +78,66 @@
     width: max-content;
     color: var(--txt-mail-footer);
     margin-bottom: 9px;
+
+    @media screen and (min-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    @media screen and (min-width: 1600px) {
+        margin-left: 0;
+        margin-right: auto;
+    }
 }
 
 &__tel {
-    display: -webkit-inline-flex;
+    display: flex;
     width: max-content;
     color: var(--txt-mail-footer);
+
+    @media screen and (min-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    @media screen and (min-width: 1600px) {
+        margin-left: 0;
+        margin-right: auto;
+        }
 }
 
+
+
 &__container-links {
-    margin-left: 70px;
+    // margin-left: 70px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 60px;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+        margin-left: 165px;
+        margin-right: auto;
+        
+    }
+
+        @media screen and (min-width: 1600px) {
+            margin-bottom: 60px;
+            margin-left: 70px;
+            margin-right: 93px;  
+        }
 }
 
 &__title,
@@ -44,10 +149,30 @@
     letter-spacing: 0.03em;
     color: var(--txt-general-btn);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1600px) {
+        text-align: left;
+    }
 }
+
+
+
 
 &__social {
     display: flex;
+
+    @media screen and (min-width: 480px) {
+        justify-content: center;
+    }
+  
 }
 
 &__list:nth-child(n+2) {
@@ -79,20 +204,64 @@
 &__sub {
     display: block;
     margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1600px) {
+        margin-left: 0;
+        margin-right: auto;
+    }
 }
 
 &__emailinput {
     margin-bottom: 0%;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 20px;
+        }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+        }
+
+    @media screen and (min-width: 1600px) {
+        margin-bottom: 0%;
+        
+        }
 }
 
 &__submit {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+
+
+    @media screen and (min-width: 480px) {
+        display: block;
+     
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        
+    }
+
+    @media screen and (min-width: 1600px) {
+        display: flex;
+        align-items: baseline;
+        
+    }
 }
 
 &__sublabel {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 480px) {
+        align-items: center;
+    }
 }
 
 &__input {
@@ -120,6 +289,27 @@
     margin-left: 12px;
     margin-top: 36px;
     border: none;
+
+    @media screen and (min-width: 480px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        display: block;
+        margin-left: 10px;
+        margin-right: auto;
+        margin-top: 20px;
+    }
 }
 
 &__sign {
