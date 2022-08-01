@@ -109,12 +109,25 @@ img {
 }
 
 .container {
-  min-width: 320px;
-  max-width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
 }
 
 .container-div {
@@ -374,9 +387,8 @@ span.logo__white {
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-top: 24px;
-    margin-left: 215px;
     margin-bottom: 25px;
-    margin-right: 93px;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -579,6 +591,11 @@ span.logo__white {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .approach__title {
+    text-align: center;
+  }
+}
 .approach__p {
   font-size: 14px;
   line-height: 1.71;
@@ -612,14 +629,14 @@ span.logo__white {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .backdrop.is-hidden .modal {
     position: fixed;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .backdrop.is-hidden .modal {
-    position: relative;
+    position: fixed;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1077,6 +1094,11 @@ span.logo__white {
           box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__input {
+    width: 450px;
+  }
+}
 .footer__submitbtn {
   background-color: var(--general-btn-cl);
   color: var(--txt-general-btn);
@@ -1173,9 +1195,8 @@ span.logo__white {
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-top: 24px;
-    margin-left: 215px;
     margin-bottom: 25px;
-    margin-right: 93px;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -1361,11 +1382,11 @@ span.logo__white {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-list:hover, .menu-list:focus {
+.menu-list__item:hover, .menu-list__item:focus {
   -webkit-box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16), 4px 0px 4px rgba(0, 0, 0, 0.06), 1px 0px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16), 4px 0px 4px rgba(0, 0, 0, 0.06), 1px 0px 1px rgba(0, 0, 0, 0.12);
 }
-.menu-list:hover .menu-list__overlay {
+.menu-list__item:hover .menu-list__item__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -1686,6 +1707,7 @@ span.logo__white {
     color: var(--txt-general-btn);
     max-width: 360px;
     margin: 0 auto;
+    padding: 118px 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1903,14 +1925,18 @@ span.logo__white {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/icons/header_sm.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/icons/header_sm.jpg);
   background-color: var(--bg-img-header);
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/icons/header@2x_sm.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/icons/header@2x_sm.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/icons/header_sm.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/icons/header_sm.jpg);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 480px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/icons/header@2x_sm.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/icons/header@2x_sm.jpg);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1921,8 +1947,8 @@ span.logo__white {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/icons/header@2x_md.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/icons/header@2x_md.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/icons/header@2x_md.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/icons/header@2x_md.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1933,7 +1959,7 @@ span.logo__white {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/icons/header@2x_lg.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/icons/header@2x_lg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/icons/header@2x_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/icons/header@2x_lg.jpg);
   }
 }/*# sourceMappingURL=main.css.map */

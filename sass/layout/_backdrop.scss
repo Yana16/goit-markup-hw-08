@@ -18,12 +18,12 @@
     transform: translate(-50%, -50%) scale(1.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
             position: fixed;
         }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-            position: relative;
+            position: fixed;
         }
 
     @media screen and (min-width: 1200px) {
