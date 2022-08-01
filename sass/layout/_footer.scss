@@ -7,7 +7,7 @@
 &__container {
     margin-bottom: 60px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;
     }
@@ -15,28 +15,28 @@
 
 &__sublabel {
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         margin-bottom: 20px;      
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 20px;      
     }
 }
 
 &__logo {
     
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 320px) and (max-width: 480px){
        display: flex;
        justify-content: center; 
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
        display: flex;
        justify-content: center; 
     }
     
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1200px){
        display: block;
     }
 }
@@ -56,17 +56,17 @@
     margin-top: 20px;
     margin-bottom: 9px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         margin-left: auto;
         margin-right: auto;
         }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;
         }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-left: auto;
         margin-right: auto;
 
@@ -79,17 +79,17 @@
     color: var(--txt-mail-footer);
     margin-bottom: 9px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         margin-left: auto;
         margin-right: auto;
         }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;
         }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 0;
         margin-right: auto;
     }
@@ -100,17 +100,17 @@
     width: max-content;
     color: var(--txt-mail-footer);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         margin-left: auto;
         margin-right: auto;
         }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;
         }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 0;
         margin-right: auto;
         }
@@ -121,19 +121,19 @@
 &__container-links {
     // margin-left: 70px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         margin-bottom: 60px;
         
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 60px;
         margin-left: 165px;
         margin-right: auto;
         
     }
 
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
             margin-bottom: 60px;
             margin-left: 70px;
             margin-right: 93px;  
@@ -150,15 +150,15 @@
     color: var(--txt-general-btn);
     margin-bottom: 20px;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         text-align: center;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         text-align: center;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         text-align: left;
     }
 }
@@ -169,7 +169,7 @@
 &__social {
     display: flex;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         justify-content: center;
     }
   
@@ -205,12 +205,12 @@
     display: block;
     margin-left: auto;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: auto;
         margin-right: auto;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-left: 0;
         margin-right: auto;
     }
@@ -219,36 +219,33 @@
 &__emailinput {
     margin-bottom: 0%;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         margin-bottom: 20px;
         }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 20px;
         }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 0%;
         
         }
 }
 
 &__submit {
-    // display: flex;
-    // align-items: baseline;
-
-
-    @media screen and (min-width: 480px) {
+  
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         display: block;
      
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: block;
         
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
         
@@ -259,7 +256,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         align-items: center;
     }
 }
@@ -273,7 +270,7 @@
     color: var(--txt-mail-footer);
     background-color: transparent;
     border-color: var(--txt-mail-footer);
-    width: 358px;
+    width: 100%;
     height: 50px;
     box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.15);
     padding-left: 16px;
@@ -290,21 +287,21 @@
     margin-top: 36px;
     border: none;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: block;
         margin-left: 10px;
         margin-right: auto;
