@@ -1,7 +1,15 @@
 .order {
     background-color: var(--bg-order);
     padding: 200px 0px;
-    
+
+    @media screen and (min-width: 320px) and (max-width: 480px) { 
+        padding: 118px 0px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+                padding: 118px 0px;
+    }
+
 
     &__title {
 
